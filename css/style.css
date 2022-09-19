@@ -397,7 +397,7 @@ main {
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
-
+   cursor: pointer;
 }
 
 .section-work__step:not(:last-child) {
@@ -412,18 +412,26 @@ main {
    color: #E1670E;
 }
 
-/* slider-work */
+.section-work__step-active {
+   color: #E1670E;
+}
 
-.slick-initialized .slick-slide {
+/* tab-work */
+
+.tab-work__item {
+   display: none;
+}
+
+.tab-work__item-active {
    display: flex;
    justify-content: space-between;
 }
 
-.slider-work__info {
+.tab-work__info {
    max-width: 758px;
 }
 
-.slider-work__title {
+.tab-work__title {
    margin: 0;
    margin-bottom: 8px;
    font-weight: 700;
@@ -431,7 +439,7 @@ main {
    line-height: 32px;
 }
 
-.slider-work__description {
+.tab-work__description {
    margin: 0;
    font-weight: 400;
    font-size: 16px;
@@ -482,6 +490,80 @@ main {
 .section-work__link-treaty:active {
    color: #FFFFFF;
    background: #000000;
+}
+
+/* section-questions */
+
+.section-questions {
+   margin-top: 111px;
+}
+
+.section-questions__title {
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 59px;
+}
+
+/* accodrion */
+
+.accodrion__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top: 1px solid #CACACA;
+   padding-top: 32px;
+   text-align: left;
+   position: relative;
+}
+
+.accodrion__title span {
+   position: absolute;
+}
+
+.accodrion__btn {
+   background: #CACACA;
+   width: 50px;
+   height: 50px;
+   border: none;
+   border-radius: 50%;
+   position: relative;
+   left: 100%;
+   transform: translateX(-100%);
+}
+
+.accodrion__btn::after,
+.accodrion__btn::before {
+   position: absolute;
+   display: block;
+   content: "";
+   background: #000000;
+   width: 1px;
+   height: 31px;
+}
+
+.accodrion__btn::after {
+   transform: translate(19px, -15px) rotate(90deg);
+}
+
+.accodrion__btn::before {
+   transform: translate(19px, -15px);
+}
+
+.accodrion__btn:active::after {
+   transform: translate(19px, -15px) rotate(45deg);
+}
+
+.accodrion__btn:active::before {
+   transform: translate(19px, -15px) rotate(-45deg);
+}
+
+.accodrion__description {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 32px;
 }
 
 /* @media screen and (max-width: 300px) {
