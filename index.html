@@ -16,7 +16,16 @@
    <header class="header">
       <div class="container">
          <div class="header__inner">
-            <img src="img/header/Logo.png" alt="Logo" class="header__logo">
+            <button class="header__btn-burger">
+               <span></span>
+            </button>
+
+            <picture class="header__logo">
+               <source srcset="img/header/Logo-320.png" media="(max-width: 320px)">
+               <source srcset="img/header/Logo-1024-768.png" media="(max-width: 1024px)">
+               <source srcset="img/header/Logo.png" media="(max-width: 1920px)">
+               <img src="img/header/Logo.png" alt="Logo">
+            </picture>
 
             <menu class="header__menu">
                <ul class="header__list">
@@ -39,6 +48,16 @@
                </button>
             </form>
          </div>
+
+         <menu class="header__menu-burger">
+            <ul class="header__list-burger">
+               <li class="header__item header__item-burger"><a href="" class="header__item-link">О нас</a></li>
+               <li class="header__item header__item-burger"><a href="" class="header__item-link">Проекты</a></li>
+               <li class="header__item header__item-burger"><a href="" class="header__item-link">Этапы</a></li>
+               <li class="header__item header__item-burger"><a href="" class="header__item-link">Отзывы</a></li>
+               <li class="header__item header__item-burger"><a href="" class="header__item-link">Контакты</a></li>
+            </ul>
+         </menu>
       </div>
    </header>
    <!-- header  -->
@@ -84,9 +103,18 @@
                         <a class="info-more__more">Подробнее</a>
                      </div>
                   </div>
+                  <div class="info-more__info">
+                     <p class="info-more__text">Принимая во внимание показатели успешности, перспективное
+                        планирование способствует подготовке и реализации новых принципов</p>
+                     <a class="info-more__more">Подробнее</a>
+                  </div>
                   <div class="info-box">
                      <div class="info-box__item">
-                        <img class="info-box__icon" src="img/about-us/icon1.svg" alt="icon">
+                        <picture class="info-box__icon">
+                           <source srcset="img/about-us/icon1-320.svg" media="(max-width: 320px)">
+                           <source srcset="img/about-us/icon1-768.svg" media="(max-width: 768px)">
+                           <img src="img/about-us/icon1.svg" alt="icon">
+                        </picture>
                         <div class="info-box__block">
                            <h1 class="info-box__title">Консультация с широким активом</h1>
                            <p class="info-box__description">А также свежий взгляд на привычные вещи — безусловно
@@ -95,7 +123,11 @@
                         </div>
                      </div>
                      <div class="info-box__item">
-                        <img class="info-box__icon" src="img/about-us/icon2.svg" alt="icon">
+                        <picture class="info-box__icon">
+                           <source srcset="img/about-us/icon2-320.svg" media="(max-width: 320px)">
+                           <source srcset="img/about-us/icon2-768.svg" media="(max-width: 768px)">
+                           <img src="img/about-us/icon2.svg" alt="icon">
+                        </picture>
                         <div class="info-box__block">
                            <h1 class="info-box__title">В своём стремлении повысить</h1>
                            <p class="info-box__description">Качество жизни, они забывают, что сплочённость команды
@@ -141,7 +173,12 @@
                            к ответу.
                         </p>
                      </div>
-                     <img src="img/work/bg1.jpg" alt="фото" class="tab-work__image">
+                     <picture class="info-box__icon">
+                        <source srcset="img/work/320/bg1.jpg" media="(max-width: 320px)">
+                        <source srcset="img/work/768/bg1.jpg" media="(max-width: 940px)">
+                        <source srcset="img/work/1024/bg1.jpg" media="(max-width: 1400px)">
+                        <img src="img/work/bg1.jpg" alt="фото" class="tab-work__image">
+                     </picture>
                   </div>
                   <!-- tab1 -->
                   <div class="tab-work__item" data-target="2">
@@ -156,7 +193,12 @@
                            исследования подвергнуты целой серии независимых исследований.
                         </p>
                      </div>
-                     <img src="img/work/bg2.jpg" alt="фото" class="tab-work__image">
+                     <picture class="info-box__icon">
+                        <source srcset="img/work/320/bg2.jpg" media="(max-width: 320px)">
+                        <source srcset="img/work/768/bg2.jpg" media="(max-width: 940px)">
+                        <source srcset="img/work/1024/bg2.jpg" media="(max-width: 1400px)">
+                        <img src="img/work/bg2.jpg" alt="фото" class="tab-work__image">
+                     </picture>
                   </div>
                   <!-- tab2 -->
                   <div class="tab-work__item" data-target="3">
@@ -174,7 +216,12 @@
                            сообщества.
                         </p>
                      </div>
-                     <img src="img/work/bg3.jpg" alt="фото" class="tab-work__image">
+                     <picture class="info-box__icon">
+                        <source srcset="img/work/320/bg3.jpg" media="(max-width: 320px)">
+                        <source srcset="img/work/768/bg3.jpg" media="(max-width: 940px)">
+                        <source srcset="img/work/1024/bg3.jpg" media="(max-width: 1400px)">
+                        <img src="img/work/bg3.jpg" alt="фото" class="tab-work__image">
+                     </picture>
                   </div>
                   <!-- tab3 -->
                   <div class="tab-work__item" data-target="4">
@@ -189,7 +236,12 @@
                            постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
                         </p>
                      </div>
-                     <img src="img/work/bg4.jpg" alt="фото" class="tab-work__image">
+                     <picture class="info-box__icon">
+                        <source srcset="img/work/320/bg4.jpg" media="(max-width: 320px)">
+                        <source srcset="img/work/768/bg4.jpg" media="(max-width: 940px)">
+                        <source srcset="img/work/1024/bg4.png" media="(max-width: 1400px)">
+                        <img src="img/work/bg4.jpg" alt="фото" class="tab-work__image">
+                     </picture>
                   </div>
                   <!-- tab4 -->
                </div>
@@ -209,7 +261,7 @@
                <h2 class="section-questions__title">
                   Часто задаваемые вопросы
                </h2>
-               <div class="accodrion accodrion_border-bottom" id="accordion">
+               <div class="accodrion accodrion__border-bottom" id="accordion">
                   <h3 class="accodrion__title">
                      <span>Из чего формируется конечная стоимость проекта?</span>
                      <button class="accodrion__btn"></button>
@@ -338,7 +390,10 @@
       <div class="container">
          <div class="footer__inner">
             <div class="footer__info">
-               <img src="img/footer/logo-footer.png" alt="logo" class="footer__logo">
+               <picture class="footer__logo">
+                  <source srcset="img/footer/logo-footer-320.png" media="(max-width: 320px)">
+                  <img src="img/footer/logo-footer.png" alt="logo">
+               </picture>
                <menu class="footer__menu">
                   <ul class="footer__list">
                      <li class="footer__item"><a href="" class="footer__item-link">О нас</a></li>
@@ -405,10 +460,10 @@
    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
    <script src="js/header-search.js"></script>
+   <script src="js/header-burger.js"></script>
    <script src="js/slider-solution.js"></script>
-   <script src="js/tab-work.js"></script>
    <script src="js/accordion-questions.js"></script>
-
+   <script src="js/tab-work.js"></script>
 </body>
 
 </html>
