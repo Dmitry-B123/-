@@ -854,6 +854,12 @@ main {
    .tab-work__info {
       margin-right: 50px;
    }
+
+   /* section-questions */
+
+   .accodrion__description {
+      overflow: auto;
+   }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1027,12 +1033,6 @@ main {
    .section-work__info {
       position: static;
       margin-top: 25px;
-   }
-
-   /* section-questions */
-
-   .accodrion__description {
-      overflow: auto;
    }
 }
 
