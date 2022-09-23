@@ -430,9 +430,9 @@
             <!-- footer__info   -->
             <div class="footer__form">
                <h2 class="footer__form-title">Оставить заявку</h2>
-               <form action="" class="form-info">
-                  <input class="form-info__text" type="text" placeholder="Фамилия, имя и отчество*" required>
-                  <input class="form-info__email" type="email" placeholder="Email*" required>
+               <form action="" class="form-info" id="form">
+                  <input class="form-info__text" type="text" id="name" placeholder="Фамилия, имя и отчество*" required>
+                  <input class="form-info__email" type="email" id="email" placeholder="Email*" required>
                   <textarea class="form-info__textarea" rows="8" placeholder="Сообщение" required></textarea>
                   <div class="form-info__row">
                      <button class="form-info__btn" type="submit">Отправить данные</button>
@@ -458,12 +458,14 @@
    <script src=" lib/jquery.min.js"></script>
    <script src="lib/slick.min.js"></script>
    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 
    <script src="js/header-search.js"></script>
    <script src="js/header-burger.js"></script>
    <script src="js/slider-solution.js"></script>
    <script src="js/accordion-questions.js"></script>
    <script src="js/tab-work.js"></script>
+   <script src="js/maski-for-inputs.js"></script>
 </body>
 
 </html>

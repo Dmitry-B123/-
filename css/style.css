@@ -768,7 +768,7 @@ main {
    background: #FF9900;
    border-radius: 16px;
    padding: 19px 52px;
-   margin-right: 22px;
+   margin-right: 18px;
 }
 
 .form-info__btn:hover {
@@ -804,10 +804,13 @@ main {
    background-repeat: no-repeat;
    background-position: center center;
    background-size: 50% 50%;
+   width: 18px;
+   height: 18px;
 }
 
 .form-info__chek:checked+label::before {
    background-image: url(../img/footer/checkbox.svg);
+   background-size: contain;
 }
 
 .form-info__row label {
